@@ -10,6 +10,9 @@
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
+            <column name="sha" type="VARCHAR(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
             <column name="message" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>

@@ -12,6 +12,6 @@ public class ScheduledTasks {
 
     @Scheduled(fixedDelayString = "${scheduler.fixedRate}")
     public void fetchCommits() {
-
+        repositoryService.fetchCommits();
     }
 }
